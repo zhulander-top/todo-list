@@ -7,16 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class = "container">
         <div class = "sidebar">
-            <button class="today">Today</button>
-            <button class="week">This Week</button>
-            <button class="later">Later</button>
+            <div class="datefilter">
+                <button class="today"><span class="emoji">🗓️</span> Today</button>
+                <button class="week"><span class="emoji">📆</span> This Week</button>
+                <button class="later"><span class="emoji">➡️</span>  Later</button>
+            </div>
+            <div class = "projects">
+                <button>+ Add Project</button>
+            </div>
         </div>
         <div class = "content">
+            <button class="addTodo">+ Add To-Do</button>
+            <div class="list">
 
+            </div>
         </div>
     </div>
 </body>

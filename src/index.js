@@ -1,5 +1,6 @@
 import { createTodo } from './todo.js';
 import { createProject } from './project.js';
+import { renderTodos } from './render.js';
 import "./styles.css";
 const defaultProject = createProject();
 
@@ -11,5 +12,5 @@ const todo1 = createTodo({
 });
 
 defaultProject.addTodo(todo1);
-
+renderTodos(defaultProject);
 console.log(defaultProject.getTodos());

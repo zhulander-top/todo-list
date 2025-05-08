@@ -5,7 +5,11 @@ body,html{
     padding:0;
 }
 *{
-    font-family:Montserrat,Roboto,'Times New Roman', Times, serif;
+    font-family: Montserrat, Roboto,'Times New Roman', Times, serif;
+}
+.emoji{
+    font-family:"Noto Color Emoji", Roboto, 'Times New Roman', Times, serif;
+    font-size:1.25rem;
 }
 .container{
     width:100%;
@@ -14,22 +18,76 @@ body,html{
 }
 .sidebar{
     background-color: #DA2C38;
-    width:25%;
+    width:20%;
     height:100%;
     display:flex;
     flex-direction:column;
     gap: 2rem;
+    align-items:center;
+}
+.datefilter{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    gap:1rem;
+    display:flex;
+    flex-direction:column;
 }
 .sidebar button{
     background-color: transparent; 
     border:none;
-    color: #1EFFBC; 
+    color: #faf8d4; 
     padding: 1rem;
     font-size: 1rem;
     font-weight:bold;
+    border-radius:6px;
     cursor: pointer;
     transition: all 0.3s ease; 
 }
+.projects button{
+    background-color: #276fbf;
+    color:white;
+    border-radius:6px;
+}
 .sidebar button:hover {
     background-color: rgba(255, 255, 255, 0.2); 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
 }
+.projects button:hover {
+    background-color: rgba(39, 111, 191, 0.8); 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.content{
+    background-color:#ede3e4;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+.addTodo{
+    width:95%;
+    height:5%;
+    background-color:#276fbf;
+    color:white;
+    font-weight:bold;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1rem;
+    border-radius:6px;
+    border:none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+.addTodo:hover {
+    background-color: #1e5aa6; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.todo-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
