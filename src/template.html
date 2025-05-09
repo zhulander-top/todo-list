@@ -20,14 +20,32 @@
                 <button class="later"><span class="emoji">➡️</span>  Later</button>
             </div>
             <div class = "projects">
-                <button>+ Add Project</button>
+                <button class="addProject">+ Add Project</button>
+                <div class="projList"></div>
             </div>
         </div>
         <div class = "content">
             <button class="addTodo">+ Add To-Do</button>
             <div class="list">
-
             </div>
+            <div class="todo-modal hidden">
+                <form id="todoForm" class="todo-form">
+                  <h2>Add New To-Do</h2>
+                  <input type="text" name="title" placeholder="Title" required />
+                  <textarea name="description" placeholder="Description"></textarea>
+                  <input type="date" name="dueDate" required />
+                  <select name="priority" required>
+                    <option value="" disabled selected>Select Priority</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                  </select>
+                  <div class="form-buttons">
+                    <button type="submit">Add</button>
+                    <button type="button" id="cancelForm">Cancel</button>
+                  </div>
+                </form>
+              </div>
         </div>
     </div>
 </body>
