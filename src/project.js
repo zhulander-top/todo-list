@@ -1,4 +1,4 @@
-import { createTodo } from './todo.js';
+
 export function createProject(name = "Default Project") {
     return {
       name,
